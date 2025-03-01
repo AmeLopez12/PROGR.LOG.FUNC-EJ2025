@@ -54,7 +54,7 @@ puntuacionTipicaRobusta :: Float -> [Float] -> Float
 puntuacionTipicaRobusta x xs = 
     let med = mediana xs
         mad' = mad xs
-    in (x - med) / (1.4826 * mad')  -- Constante para aproximar a desviación típica
+    in (x - med) / (1.4826 * mad')
 
 valoresAtipicos :: [Float] -> [Float]
 valoresAtipicos xs = 
